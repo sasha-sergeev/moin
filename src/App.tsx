@@ -7,7 +7,6 @@ import Sidebar from "./layout/Sidebar.tsx"
 import { CustomThemeProvider } from "./layout/Theme.tsx"
 import { pages } from "./Config.tsx"
 
-
 export const Content = (): ReactElement => {
     return (
         <Routes>
@@ -19,9 +18,8 @@ export const Content = (): ReactElement => {
     )
 }
 
-
 function App() {
-    const [sidebarOpen, setSidebarOpen] = useState(true)
+    const [sidebarOpen, setSidebarOpen] = useState(false)
 
     const toggleSidebar = () => {
         setSidebarOpen(!sidebarOpen)
