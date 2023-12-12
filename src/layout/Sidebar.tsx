@@ -39,7 +39,7 @@ const Sidebar: React.FC<SidebarProps> = ({ open, toggleSidebar }) => {
             onClose={toggleSidebar}
             sx={{
                 '& .MuiDrawer-paper': {
-                    backgroundColor: 'secondary.main',
+                    backgroundColor: 'primary.main',
                 },
             }}
         >

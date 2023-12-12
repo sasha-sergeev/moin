@@ -18,17 +18,17 @@ declare module '@mui/material/styles' {
 
 const Theme = createTheme({
     palette: {
+        background: {
+            default: '#7eb19f',
+        },
         primary: {
-            main: '#432c51',
+            main: '#0c8282',
         },
         secondary: {
-            main: '#535474',
+            main: '#ef9037',
         },
         tertiary: {
-            main: '#54a4af',
-        },
-        quaternary: {
-            main: '#ecbc55',
+            main: '#edddbd',
         },
 
         error: {
@@ -64,7 +64,6 @@ export const CustomThemeProvider = (props: PropsWithChildren) => {
     return (
         <ThemeContext.Provider value={{ currentTheme, toggleTheme }}>
             <ThemeProvider theme={currentTheme}>
-                {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
                 <CssBaseline />
                 {props.children}
             </ThemeProvider>
