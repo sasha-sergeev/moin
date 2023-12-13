@@ -2,6 +2,7 @@ import { ReactElement, useState } from "react"
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 
 import './App.css'
+import './index.css'
 import Header from "./layout/Header.tsx"
 import Sidebar from "./layout/Sidebar.tsx"
 import { CustomThemeProvider } from "./layout/Theme.tsx"
